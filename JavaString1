@@ -1,0 +1,27 @@
+public class Main {
+	public static void main(String[] args) {
+		/*String strName="ALPHA,BETA,GAMMA,DELTA,STIGMA";
+		String[] strAry = strName.split(",");
+		for(int i=0; i< strAry.length; i++) {
+			System.out.println(strAry[i]);
+		}*/
+		
+		
+		/*
+		 * String
+		 * strName="ALPHA,,,,,,,BETA,,,,,,,GAMMA,,,,,,,,DELTA,,,,,,,,,,,,,,,STIGMA";
+		 * String[] strAry = strName.split(",+"); for(int i=0; i< strAry.length; i++) {
+		 * // if(strAry[i].length()> 0) { System.out.println(strAry[i]); } // }
+		 */		
+		String s = "The Indian Premier League, also known as the TATA IPL for sponsorship reasons, is a men's Twenty20 cricket league held annually in India. Founded by the BCCI in 2007, the league features ten city-based franchise teams. The IPL usually takes place during the summer, between March and May each year.";
+		int cnt = 0;
+		
+		for(int i = 0; i< s.length(); i++) {
+			if(s.charAt(i) == 'I')
+				cnt++;
+		}
+		System.out.println(cnt);
+		
+		
+	}
+}
